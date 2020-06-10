@@ -38,13 +38,13 @@ SOFTWARE.
 /* state machine variable to hold state of nvm write sequence */
 uint8 SpeedLimiterNvmWriteState = SPEEDLIMITER_NVM_WRITE_STATE_IDLE;
 
-typedef SpeedLimiterType {
+typedef struct SpeedLimiterType {
   uint8 defaultLimit;
   uint8 maxLimit;
 }
 SpeedLimiterType;
 
-void Swc_SpeedLimter_trigger_persistNvm(uint8 defaultLimit, uint8 maxLimit) {
+Std_ReturnType Swc_SpeedLimter_trigger_persistNvm(uint8 defaultLimit, uint8 maxLimit) {
   Std_ReturnType RetVal = E_NOT_OK;
   SpeedLimiterType* pRamData = Rte_Pim_SpeedLimter();
   if ((SPEEDLIMITER_NVM_WRITE_STATE_IDLE == SpeedLimiterNvmWriteState) ||
