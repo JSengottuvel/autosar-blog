@@ -2,7 +2,7 @@
 nvm_writeblock_example.c
 
 Sample code related to blog entry :
-https://autosar.jayakumar.de/blog/nvm/2020/06/id_12/
+https://autosar.jayakumar.de/blog/2020/06/id_12/
 
 MIT License
 

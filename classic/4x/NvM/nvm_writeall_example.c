@@ -2,7 +2,7 @@
 nvm_writeall_example.c
 
 Sample code related to blog entry :
-https://autosar.jayakumar.de/blog/uncategorized/2020/06/id_32/
+https://autosar.jayakumar.de/blog/2020/06/id_32/
 
 MIT License
 
