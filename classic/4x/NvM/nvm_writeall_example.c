@@ -35,7 +35,6 @@ typedef struct SpeedLimiterType {
 } SpeedLimiterType;
 
 void Swc_SpeedLimter_NvmUpdateRam(uint8 defaultLimit, uint8 maxLimit) {
-    Std_ReturnType RetVal = E_NOT_OK;
     /* Get reference to RAM block*/
     SpeedLimiterType* pRamData = Rte_Pim_SpeedLimter();
     /* Update RAM block content with the values from user */
